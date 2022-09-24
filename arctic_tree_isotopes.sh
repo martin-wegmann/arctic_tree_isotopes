@@ -42,11 +42,11 @@ cdo -L -b 32 sub -yearmean -selmon,9,10 rhum.2m.mon.mean_19012000.nc -timmean -s
 
 
 
-cdo -f nc input,r1x1 pc1_o18_olga.nc < pc1_o18_olga.txt
+cdo -f nc input,r1x1 pc1_o18_olga.nc < pc1_o18_boreal_trees.txt
 cdo -r -chname,var1,o18 -settaxis,1901-07-01,00:00:00,1year pc1_o18_olga.nc pc1_o18_olga_time.nc
 cdo detrend pc1_o18_olga_time.nc pc1_o18_olga_time_detrend.nc
 
-cdo -f nc input,r1x1 pc2_o18_olga.nc < pc2_o18_olga.txt
+cdo -f nc input,r1x1 pc2_o18_olga.nc < pc2_o18_boreal_trees.txt
 cdo -r -chname,var1,o18 -settaxis,1901-07-01,00:00:00,1year pc2_o18_olga.nc pc2_o18_olga_time.nc
 cdo detrend pc2_o18_olga_time.nc pc2_o18_olga_time_detrend.nc
 
@@ -103,11 +103,11 @@ cdo timcor air.2m.mon.mean_JJ_19012000_anoms.nc pc2_o18_olga_time_detrend_enlarg
 
 
 
-cdo -f nc input,r1x1 pc1_c13_olga.nc < pc1_c13_olga.txt
+cdo -f nc input,r1x1 pc1_c13_olga.nc < pc1_c13_boreal_trees.txt
 cdo -r -chname,var1,c13 -settaxis,1901-07-01,00:00:00,1year pc1_c13_olga.nc pc1_c13_olga_time.nc
 cdo detrend pc1_c13_olga_time.nc pc1_c13_olga_time_detrend.nc
 
-cdo -f nc input,r1x1 pc2_c13_olga.nc < pc2_c13_olga.txt
+cdo -f nc input,r1x1 pc2_c13_olga.nc < pc2_c13_boreal_trees.txt
 cdo -r -chname,var1,c13 -settaxis,1901-07-01,00:00:00,1year pc2_c13_olga.nc pc2_c13_olga_time.nc
 cdo detrend pc2_c13_olga_time.nc pc2_c13_olga_time_detrend.nc
 
@@ -166,11 +166,11 @@ cdo timcor air.2m.mon.mean_JJ_19012000_anoms.nc pc2_c13_olga_time_detrend_enlarg
 
 
 
-cdo -f nc input,r1x1 pc1_d2h_olga.nc < pc1_d2h_olga.txt
+cdo -f nc input,r1x1 pc1_d2h_olga.nc < pc1_d2h_boreal_trees.txt
 cdo -r -chname,var1,d2h -settaxis,1901-07-01,00:00:00,1year pc1_d2h_olga.nc pc1_d2h_olga_time.nc
 cdo detrend pc1_d2h_olga_time.nc pc1_d2h_olga_time_detrend.nc
 
-cdo -f nc input,r1x1 pc2_d2h_olga.nc < pc2_d2h_olga.txt
+cdo -f nc input,r1x1 pc2_d2h_olga.nc < pc2_d2h_boreal_trees.txt
 cdo -r -chname,var1,d2h -settaxis,1901-07-01,00:00:00,1year pc2_d2h_olga.nc pc2_d2h_olga_time.nc
 cdo detrend pc2_d2h_olga_time.nc pc2_d2h_olga_time_detrend.nc
 
