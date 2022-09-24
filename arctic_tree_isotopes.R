@@ -165,11 +165,10 @@ fviz_eig(res.pca_d2h)
 
 eig.val_d2h <- get_eigenvalue(res.pca_d2h)
 
-head(eig.val_d2h)
 
 ind.coord_d2h <- res.pca_d2h$x
 
-head(ind.coord_d2h)
+
 
 
 
@@ -179,8 +178,8 @@ pc2_o18=ts(ind.coord_o18[,2],start=1901,end=2000,freq=1)
 ts.plot(pc1_o18,main="pc1 o18")
 ts.plot(pc2_o18,main="pc2 o18")
 
-write.table(pc1_o18,"pc1_o18_olga.txt",col.names=FALSE, row.names = FALSE)
-write.table(pc2_o18,"pc2_o18_olga.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc1_o18,"pc1_o18_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc2_o18,"pc2_o18_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
 
 
 
@@ -192,8 +191,8 @@ pc2_c13=ts(ind.coord_c13[,2],start=1901,end=2000,freq=1)
 ts.plot(pc1_c13,main="pc1 c13")
 ts.plot(pc2_c13,main="pc2 c13")
 
-write.table(pc1_c13,"pc1_c13_olga.txt",col.names=FALSE, row.names = FALSE)
-write.table(pc2_c13,"pc2_c13_olga.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc1_c13,"pc1_c13_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc2_c13,"pc2_c13_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
 
 
 
@@ -205,6 +204,6 @@ pc2_d2h=ts(ind.coord_d2h[,2],start=1901,end=2000,freq=1)
 ts.plot(pc1_c13,main="pc1 d2h")
 ts.plot(pc2_c13,main="pc2 d2h")
 
-write.table(pc1_d2h,"pc1_d2h_olga.txt",col.names=FALSE, row.names = FALSE)
-write.table(pc2_d2h,"pc2_d2h_olga.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc1_d2h,"pc1_d2h_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
+write.table(pc2_d2h,"pc2_d2h_boreal_trees.txt",col.names=FALSE, row.names = FALSE)
 
